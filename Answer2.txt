@@ -1,0 +1,11 @@
+2 -  a - 	The propTypes of the items prop in the WrappedListComponent were not specified correctly. The prop should be an 		array of objects with a text property of type string. 
+	"items: PropTypes.arrayOf(PropTypes.shape({ text: PropTypes.string.isRequired })).isRequired"
+      b -     The index prop of the WrappedSingleListItem component was not marked as required in its propTypes declaration.
+	"index: PropTypes.number.isRequired".
+      c  -     The isSelected prop of the WrappedSingleListItem component was not marked as required in its propTypes 			declaration.
+	"isSelected: PropTypes.bool.isRequired"
+      d  -   The onClickHandler prop of the WrappedSingleListItem component was not called correctly.
+	"onClick={() => onClickHandler(index)}"
+      e  -   The isSelected prop of the SingleListItem component was not passed the correct value.
+	"isSelected={selectedIndex === index"
+      f  -   The items prop of the WrappedListComponent was not properly checked for null or undefined values. An empty array 		should be passed as defaultProp instead of null.
